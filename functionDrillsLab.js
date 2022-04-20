@@ -182,8 +182,15 @@ console.log(nameGreeting)
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
-
+function faceColorFinder (color) {
+  color = String(color)
+  return color === 'red' ? 'red is a great color'
+  : color === 'green' ? 'green is a solid favorite color'
+  : color === 'black' ? 'so trendy'
+  : 'You need to evaluate your favorite color choice';
+}
+let colorRating = faceColorFinder('blue')
+console.log(colorRating)
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
